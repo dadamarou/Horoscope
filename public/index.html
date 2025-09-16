@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Horoscope</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 2rem auto; padding: 1rem; }
+    label { display:block; margin-top: 0.5rem; }
+    button { margin-top: 1rem; }
+    .result { margin-top: 1.5rem; padding: 1rem; border: 1px solid #ddd; border-radius: 6px;}
+  </style>
+</head>
+<body>
+  <h1>Horoscope</h1>
+  <p>Donne ta date de naissance et ton genre pour recevoir ton horoscope.</p>
+
+  <form id="form">
+    <label>
+      Date de naissance
+      <input type="date" id="dob" required />
+    </label>
+
+    <label>
+      Genre
+      <select id="gender">
+        <option value="homme">Homme</option>
+        <option value="femme">Femme</option>
+        <option value="autre">Autre</option>
+      </select>
+    </label>
+
+    <button type="submit">Obtenir l'horoscope</button>
+  </form>
+
+  <div id="output"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
